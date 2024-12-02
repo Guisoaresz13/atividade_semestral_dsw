@@ -1,0 +1,62 @@
+/* Estilo Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha ao topo */
+    height: 100vh; /* Garante que a altura da página seja 100% da janela */
+    background-color: #f8f9fa; /* Fundo claro */
+}
+
+/* Container Centralizado no Topo */
+.container {
+    margin-top: 20px; /* Espaçamento do topo */
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Texto de Subtítulo */
+p {
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+/* Botão */
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3538f7; /* Verde */
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Aviso de Nota */
+.note {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #ffeeba; /* Fundo amarelo */
+    border-left: 4px solid #ffc107;
+    color: #856404;
+    font-size: 1rem;
+}
+
+/* Tabela */
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
