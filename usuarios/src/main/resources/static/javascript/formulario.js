@@ -1,4 +1,4 @@
-async function CriarUsuário() {
+async function CriarUsuario() {
   const nome = document.getElementById('nome').value;
   const email = document.getElementById('email').value;
   const senha = document.getElementById('senha').value;
@@ -14,4 +14,4 @@ async function CriarUsuário() {
 
 
 //Eventos
-document.getElementById('btnSalvarForm').addEventListener('click', CriarUsuário);
+document.getElementById('btnSalvarForm').addEventListener('click', CriarUsuario);
