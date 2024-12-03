@@ -1,9 +1,6 @@
 package br.senac.tads.dsw.usuarios.model;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -38,10 +35,11 @@ public class Usuario {
     private String email;
 
     @NotBlank
+    @Size(min = 6, max = 100)
     private String senha;
 
     @NotBlank
+    @Size(max = 100)
     private String permissoes;
      
-
 }
