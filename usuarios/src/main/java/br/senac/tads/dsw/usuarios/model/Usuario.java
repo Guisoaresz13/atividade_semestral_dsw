@@ -12,8 +12,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity //demarca como entidade do banco de dados
-@Table(name = "tb_usuario") //cria tabela no banco de dados
+@Entity
+@Table(name = "tb_usuario")
 @Getter
 @Setter 
 @AllArgsConstructor
@@ -41,5 +41,8 @@ public class Usuario {
     @NotBlank
     @Size(max = 100)
     private String permissoes;
+
+    public Usuario() {
+    }
      
 }

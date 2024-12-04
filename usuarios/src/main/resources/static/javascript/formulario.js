@@ -1,14 +1,14 @@
 async function CriarUsuario(event) {
   event.preventDefault();
   limparErros();
-  
+
   const nome = document.getElementById('inputNome').value.trim();
   const email = document.getElementById('inputEmail').value.trim();
   const senha = document.getElementById('inputSenha').value;
   const permissoes = document.getElementById('inputPerm').value.trim();
-  
+
   let temErro = false;
-  
+
   if (!nome) {
     mostrarErro('inputNome', 'O nome é obrigatório!');
     temErro = true;
@@ -25,7 +25,7 @@ async function CriarUsuario(event) {
     mostrarErro('inputPerm', 'As permissões de acesso são obrigatórias!');
     temErro = true;
   }
-  
+
   if (temErro) return;
 
   const usuario = {
@@ -34,7 +34,7 @@ async function CriarUsuario(event) {
     senha: senha,
     permissoes: permissoes,
   };
-  
+
   fetch('/api/usuarios', {
     method: 'POST',
     headers: {
