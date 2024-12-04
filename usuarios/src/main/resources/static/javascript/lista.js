@@ -11,6 +11,7 @@ async function listarUsuarios() {
             throw new Error('Erro ao recuperar os usuários');
         }
         const usuarios = await response.json();
+        console.log(usuarios);
 
         if (usuarios.length < 1) {
             tabelaUsuarios.classList.add('d-none');
